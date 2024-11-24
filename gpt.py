@@ -18,18 +18,17 @@ else:
 
 # Hyperparameters
 batch_size = 64
-block_size = 256
+block_size = 64
 max_iters = 5000
 eval_interval = 500
-learning_rate = 3e-4
+learning_rate = 2e-4
 device = mps_device
 eval_iters = 200
 n_embd = 384
 torch.manual_seed(42)
-n_layer = 5
-dropout = 0.2
-n_head = 5
-
+n_layer = 6
+dropout = 0.3
+n_head = 8
 
 class Head(torch.nn.Module):
     """
